@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Form</title>
+    <link rel="stylesheet" href="css/post.css" />
+  </head>
+
+  <body>
+    <div class="container-post">
+      <h2>Post an event</h2>
+      <form>
+        <label for="title">Title:</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          required
+          placeholder="Event title"
+        />
+
+        <label for="campus">Campus:</label>
+        <select id="campus" name="campus" required>
+          <option value="" disabled selected>Choose campus</option>
+          <option value="nasugbu">ARASOF Nasugbu Campus</option>
+          <option value="balayan">Balayan Campus</option>
+          <option value="malvar">JPLPC Malvar Campus</option>
+          <option value="lemery">Lemery Campus</option>
+          <option value="lipa">Lipa Campus</option>
+          <option value="lobo">Lobo Campus</option>
+          <option value="mabini">Mabini Campus</option>
+          <option value="poblacion">Pablo Borbon Campus 1(Poblacion)</option>
+          <option value="alanginan">Pablo Borbon Campus 2(Alanginan)</option>
+          <option value="rosario">Rosario Campus</option>
+          <option value="san juan">San Juan Campus</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          required
+          placeholder="Add text"
+        ></textarea>
+
+        <div class="date-fields">
+          <label for="start_date">Start Date:</label>
+          <input
+            type="date"
+            id="start_date"
+            name="start_date"
+            required
+            style="width: 190px"
+          />
+
+          <label for="end_date">End Date:</label>
+          <input
+            type="date"
+            id="end_date"
+            name="end_date"
+            required
+            style="width: 190px"
+          />
+        </div>
+
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required />
+
+        <button id="postB" type="submit">Post</button>
+        <button type="button" id="cancelButton">Cancel</button>
+      </form>
+    </div>
+    <script src="js/post.js"></script>
+  </body>
+</html>
