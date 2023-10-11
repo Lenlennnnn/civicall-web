@@ -35,8 +35,8 @@
       <div class="event-details">
         <h1 class="event-title">Emergency Response</h1>
         <p><b>Title:</b> Aid Healing</p>
-        <p><b>Campus:</b> Lipa</p>
-        <p><b>Location:</b> Lipa Batangas</p>
+        <p><b>Campus:</b> JPLPC Malvar</p>
+        <p><b>Location:</b> Malvar Batangas</p>
       </div>
     </div>
     <h2>Project Description</h2>

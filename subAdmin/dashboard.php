@@ -392,7 +392,7 @@
           <a class="others text-center small text-gray-500" href="#">Show All Alerts</a>
         </div>
 
-        <h5 class="adminPro">Sub Admin</h5>
+        <h5 class="adminPro">Malvar's Admin</h5>
         <div class="user-profile pull-right">
           <img class="avatar user-thumb hover-effect" src="img/profile.png" width="50px" onclick="toggleDropdown()" />
 

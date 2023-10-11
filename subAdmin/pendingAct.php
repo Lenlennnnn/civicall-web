@@ -197,7 +197,7 @@
               <td>Lesson Learned</td>
               <td>Never Stop Learning</td>
               <td>2023-03-12</td>
-              <td>Malvar Campus</td>
+              <td>JPLPC Malvar</td>
 
             </tr>
 

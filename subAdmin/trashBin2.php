@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trash Bin Events</title>
+    <title>Trash Bin Accounts</title>
     <link rel="icon" type="image/png" href="login/images/icons/civicicon.png" />
     <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
@@ -346,7 +346,7 @@
                 <input type="checkbox" id="selectAllCheckbox"> <label for="selectAllCheckbox">Select All</label>
                 <button class="delete-button">Delete</button>
                 <button class="restore-button">Restore</button>
-                <a href="trashBin2.php">
+                <a href="trashBin.php">
                     <button type="button" class="btn btn-secondary">View Accounts</button>
                 </a>
             </div>
@@ -381,116 +381,26 @@
                     </tr>
                 </thead>
                 <tbody>
+
                     <tr>
                         <td class="check"><input type="checkbox" class="rowCheckbox"></td>
-                        <td class="open-modal-event">The environmental cleaning program has been deleted. <span class="date" style="margin-left: 427px;">2023-03-23</span></td>
+                        <td class="open-modal-report">20-65432 suspended of 1 month duo to inappropriate content <span class="date" style="margin-left: 380px;">2023-01-27</span></td>
                     </tr>
                 </tbody>
             </table>
-            <!-- Modal event -->
-            <div id="myModalEvent" class="modalEvent">
-                <div class="modal-content-event">
-                    <span class="close" id="closeModalEvent"></span>
-                    <div>
-                        <div class="event-details">
-                            <h1 class="event-title">Sustainable Environmental Cleaning</h1>
-                            <p><b>Title:</b> Revitalizing Our World</p>
-                            <p><b>Campus:</b> Malvar</p>
-                            <p><b>Location:</b> Malvar Batangas</p>
-                            <h4>Time & Date:</h4>
-                            <p>9:00 am - 9:00 pm<br />April 12, 2023 (Tuesday)</p>
-                        </div>
+            <!-- modal for report user -->
+            <div id="myModalReport" class="modalReport">
+                <div class="modal-content-report">
+                    <span class="close" id="closeModalReport"></span>
+                    <div class="user-profile">
+                        <img src="img/dean2.jpg" alt="User Profile" class="profile-image" width="100px">
+                        <h2>Dean Winchester</h2>
                     </div>
-                    <h2>Project Description</h2>
-                    <div class="event-description">
-                        <div class="description-info">
-                            <h3>Introduction</h3>
-                            <p>
-                                Environmental pollution is a significant issue that affects human
-                                health and the planet's ecosystem. The Environmental Cleaning
-                                Program aims to create awareness and promote community action
-                                towards cleaning up the environment by organizing activities that
-                                support the environment's health and hygiene.
-                            </p>
-                        </div>
-                        <div class="description-info">
-                            <h3>Objectives</h3>
-                            <p>
-                                <i> main objectives of the Environmental Cleaning Program are:</i><br /><br />
+                    <label for="" style="text-align: left;">Reason for Report</label>
+                    <textarea class="fixed-height-textarea" readonly>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor lectus vel ante ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor lectus vel ante ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor lectus vel ante ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor lectus vel ante ultrices.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor lectus vel ante ultrices.
+    </textarea>
 
-                                To create awareness about environmental pollution and its effects on
-                                human health and the ecosystem. To promote the adoption of
-                                environmentally friendly practices in homes, workplaces, and
-                                communities. To mobilize communities to participate in activities
-                                that promote environmental cleanliness, including cleaning
-                                campaigns, waste management, and recycling. To collaborate with
-                                local authorities, non-governmental organizations, and other
-                                stakeholders to develop and implement policies and programs that
-                                promote environmental cleanliness. To evaluate and continuously
-                                improve the program's effectiveness and impact.
-                            </p>
-                        </div>
-                        <div class="description-info">
-                            <h3>Program Components</h3>
-                            <p>
-                                The Environmental Cleaning Program consists of several components:
-                                Community Education and Awareness: This component involves
-                                conducting awareness-raising campaigns, seminars, and training
-                                sessions to educate communities on environmental pollution and its
-                                effects. It includes topics such as waste management, recycling, and
-                                adopting environmentally friendly practices. Environmental Clean-up
-                                Activities: This component involves organizing clean-up activities
-                                such as community clean-up campaigns, tree planting activities, and
-                                recycling initiatives. These activities will be conducted in
-                                collaboration with local authorities, non-governmental
-                                organizations, and other stakeholders. Waste Management and
-                                Recycling: This component involves promoting waste reduction, proper
-                                waste disposal, and recycling practices. It includes educating
-                                communities on how to sort waste, composting, and the benefits of
-                                recycling. Advocacy and Policy Development: This component involves
-                                advocating for policies that promote environmental cleanliness and
-                                working with local authorities to implement and enforce these
-                                policies.
-                            </p>
-                        </div>
-                        <div class="description-info">
-                            <h3>Evaluation and Monitoring</h3>
-                            <p>
-                                The Environmental Cleaning Program will be regularly evaluated to
-                                determine its effectiveness and impact. This will involve tracking
-                                key performance indicators such as the number of community clean-up
-                                campaigns conducted, the amount of waste recycled, and the number of
-                                policies implemented. Feedback from program participants and other
-                                stakeholders will also be solicited to inform program improvements.
-                            </p>
-                        </div>
-                        <div class="description-info">
-                            <h3>Conclusion</h3>
-                            <p>
-                                The Environmental Cleaning Program aims to create awareness and
-                                promote community action towards cleaning up the environment. By
-                                organizing activities that support the environment's health and
-                                hygiene, promoting environmentally friendly practices, and
-                                collaborating with local authorities and other stakeholders, the
-                                program aims to create a sustainable and clean environment for all.
-                            </p>
-                        </div>
-                        <div class="description-info">
-                            <h3>Members:</h3>
-                            <p>
-                                Sarah Johnson <br />
-                                Michael Lee <br />
-                                Ashley Rodriguez <br />
-                                Brandon Singh <br />
-                                Rachel Chen <br />
-                                Jason Patel <br />
-                                Melissa Wong <br />
-                                Christopher Kim <br />
-                                Olivia Martinez <br />
-                                William Chen <br />
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -571,28 +481,30 @@
         const restoreButton = document.querySelector('.restore-button');
         restoreButton.addEventListener('click', openRestoreModal);
 
-        /* event modal js */
+
+
+        /* for report user modal */
         // Get the modal and the close button
-        const modalEvent = document.getElementById("myModalEvent");
-        const closeModalEvent = document.getElementById("closeModalEvent");
+        const modalReport = document.getElementById("myModalReport");
+        const closeModalReport = document.getElementById("closeModalReport");
 
         // Get the table data that opens the modal
-        const openModalEventTrigger = document.querySelector(".open-modal-event");
+        const openModalReportTrigger = document.querySelector(".open-modal-report");
 
         // When the user clicks the table data, open the modal
-        openModalEventTrigger.addEventListener("click", function() {
-            modalEvent.style.display = "block";
+        openModalReportTrigger.addEventListener("click", function() {
+            modalReport.style.display = "block";
         });
 
         // When the user clicks the close button, close the modal
-        closeModalEvent.addEventListener("click", function() {
-            modalEvent.style.display = "none";
+        closeModalReport.addEventListener("click", function() {
+            modalReport.style.display = "none";
         });
 
         // When the user clicks outside the modal, close it
         window.addEventListener("click", function(event) {
-            if (event.target === modalEvent) {
-                modalEvent.style.display = "none";
+            if (event.target === modalReport) {
+                modalReport.style.display = "none";
             }
         });
     </script>

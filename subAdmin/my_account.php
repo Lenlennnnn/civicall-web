@@ -100,46 +100,47 @@
 
         <div class="form-group">
           <label for="email">Email Account:</label>
-          <input type="email" id="email" name="email" value="20-12345@g.batstate-u.edu.ph" readonly />
+          <div class="input-container">
+            <input type="email" id="email" name="email" value="20-12345@g.batstate-u.edu.ph" readonly />
+            <span class="edit-icon" onclick="enableEdit('email')">✎</span>
+          </div>
         </div>
 
         <div class="form-group">
           <label for="title">Account ID:</label>
-          <input type="text" id="title" name="title" value="20-12345" readonly />
-        </div>
-
-        <div class="form-group">
-          <label for="campus">Campus:</label>
-          <input type="text" id="campus" name="campus" value="Pablo Borbon Batangas" readonly />
+          <div class="input-container">
+            <input type="text" id="title" name="title" value="20-12345" readonly />
+            <span class="edit-icon" onclick="enableEdit('title')">✎</span>
+          </div>
         </div>
 
         <div class="form-group">
           <label for="phone-number">Position:</label>
-          <input type="text" id="phone-number" name="phone-number" value="Dean CICS" readonly />
+          <div class="input-container">
+            <input type="text" id="phone-number" name="phone-number" value="Dean CICS" readonly />
+            <span class="edit-icon" onclick="enableEdit('phone-number')">✎</span>
+          </div>
         </div>
 
         <div class="form-group">
-          <label for="password">Change Password:</label>
+          <label for="campus">Campus:</label>
           <div class="input-container">
-            <input type="password" id="password" name="password" value="0912345678" readonly />
-            <span class="edit-icon" onclick="enableEdit('password')">✎</span>
+            <input type="text" id="campus" name="campus" value="JPLPC Malvar Batangas" readonly />
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <script>
-    function enableEdit(fieldName) {
-      const field = document.getElementById(fieldName);
-      const inputContainer = field.parentElement;
+      <script>
+        function enableEdit(fieldName) {
+          const field = document.getElementById(fieldName);
+          const inputContainer = field.parentElement;
 
-      // Toggle the "editing" class on the input container
-      inputContainer.classList.toggle("editing");
+          // Toggle the "editing" class on the input container
+          inputContainer.classList.toggle("editing");
 
-      // Toggle the "readonly" attribute of the input field
-      field.readOnly = !field.readOnly;
-    }
-  </script>
+          // Toggle the "readonly" attribute of the input field
+          field.readOnly = !field.readOnly;
+        }
+      </script>
 </body>
 
 </html>

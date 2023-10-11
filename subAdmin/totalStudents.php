@@ -198,7 +198,7 @@
               <td>Cruz, Juan D.</td>
               <td>20-12345@g.batstate-u.edu.ph</td>
               <td>Male</td>
-              <td>Malvar</td>
+              <td>JPLPC Malvar</td>
               <td>BSIT</td>
               <td>2023-01-15</td>
             </tr>
@@ -207,7 +207,7 @@
               <td>Draguin, Sam C.</td>
               <td>20-54321g.batstate-u.edu.ph</td>
               <td>Male</td>
-              <td>Malvar</td>
+              <td>JPLPC Malvar</td>
               <td>BSIT</td>
               <td>2022-04-13</td>
             </tr>

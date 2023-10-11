@@ -195,7 +195,7 @@
             <tr class="clickable-row" onclick="window.location.href='reqInfo.php';">
               <td>Emergency Response</td>
               <td>Aid Healing</td>
-              <td>Lipa</td>
+              <td>JPLPC Malvar</td>
               <td>2023-09-03</td>
             </tr>
 

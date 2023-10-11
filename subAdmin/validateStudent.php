@@ -81,7 +81,7 @@
                             <td>20-12345@g.batstate-u.edu.ph</td>
                             <td>Male</td>
                             <td>Information Technology</td>
-                            <td>JPLPC Malvar Batangas</td>
+                            <td>JPLPC Malvar</td>
                             <td>2023-01-15</td>
                         </tr>
 
