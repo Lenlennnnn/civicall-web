@@ -67,13 +67,13 @@
             border: 1px solid black;
             padding: 20px;
             text-align: center;
-            margin-right: 30px;
-            margin-left: 30px;
+            margin-right: 10px;
+            margin-left: 10px;
             /* Increase the right margin for spacing */
             margin-bottom: 5px;
             border-radius: 15px;
             width: 250px;
-            height: 120px;
+            height: 350px;
             background-color: #343a40;
             transition: transform 0.2s;
             text-decoration: none;
@@ -86,11 +86,13 @@
 
         .yellow-star {
             color: yellow !important;
+            font-size: 21px;
         }
 
         h2,
         p {
             color: white;
+            margin: 20px;
         }
 
 
@@ -126,6 +128,15 @@
             padding: 3px 6px;
             font-size: 12px;
         }
+
+        .centerName {
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 60px;
+        }
     </style>
 </head>
 
@@ -137,11 +148,7 @@
             </div>
         </a>
         <div class="report-container">
-            <br>
-            <h3>Report a Problem</h3>
-            <br>
-            <textarea name="Report" id="report" cols="30" rows="10" placeholder="Type your message here..."></textarea>
-            <button type="submit" class="submit-report">Submit</button>
+
             <div class="retainer">
                 <a href="viewReport.php">
                     <button class="report-button">View Reports <span class="notification-badge">1</span></button>
@@ -161,7 +168,7 @@
                 <!-- First Feedback Container -->
 
                 <a href="testimonial.php" class="feedback-box">
-                    <div>
+                    <div class="centerName">
                         <h2>58k</h2>
                         <!-- Star Icons -->
                         <ion-icon name="star" class="yellow-star"></ion-icon>
@@ -177,7 +184,7 @@
 
                 <!-- Second Feedback Container -->
                 <a href="testimonial.php" class="feedback-box">
-                    <div>
+                    <div class="centerName">
                         <h2>12k</h2>
 
                         <!-- Star Icons -->
@@ -187,13 +194,13 @@
                         <ion-icon name="star" class="yellow-star"></ion-icon>
                         <ion-icon name="star-outline" class="yellow-star"></ion-icon>
 
-                        <p>Very Good</p>
+                        <p>Great</p>
 
                     </div>
                 </a>
                 <!-- Third Feedback Container -->
                 <a href="testimonial.php" class="feedback-box">
-                    <div>
+                    <div class="centerName">
                         <h2>10k</h2>
 
                         <!-- Star Icons -->
@@ -209,7 +216,7 @@
                 </a>
                 <!-- Fourth Feedback Container -->
                 <a href="testimonial.php" class="feedback-box">
-                    <div>
+                    <div class="centerName">
                         <h2>2k</h2>
 
                         <!-- Star Icons -->
@@ -225,7 +232,7 @@
                 </a>
                 <!-- Fifth Feedback Container -->
                 <a href="testimonial.php" class="feedback-box">
-                    <div>
+                    <div class="centerName">
                         <h2>700</h2>
 
                         <!-- Star Icons -->

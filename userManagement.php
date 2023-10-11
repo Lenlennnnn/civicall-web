@@ -192,6 +192,26 @@
     body {
       background-color: #E1E1E1;
     }
+
+    .radio-group {
+      display: flex;
+      align-items: center;
+      position: relative;
+      right: 80px;
+
+    }
+
+    .radio-group input[type="radio"] {
+      margin-right: -150px;
+      margin-top: 10px;
+      /* Adjust the margin as needed */
+    }
+
+    /* Optional: To align the labels properly with the radio buttons */
+    .radio-group label {
+      display: flex;
+      align-items: center;
+    }
   </style>
 </head>
 
@@ -237,6 +257,15 @@
 
             <label for="middlename">Middle Name:</label>
             <input type="text" id="middlename" name="middlename" required placeholder="Your middle name" />
+
+            <label>Gender:</label>
+            <div class="radio-group">
+              <input type="radio" id="male" name="gender" value="male" required>
+              <label for="male" style=" font-weight: normal;">Male</label>
+              <input type="radio" id="female" name="gender" value="female" required>
+              <label for="female" style=" font-weight: normal;">Female</label>
+            </div>
+
 
             <label for="campus">Campus:</label>
             <select id="campus" name="campus" required>

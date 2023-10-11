@@ -220,12 +220,6 @@
                 <a href="#" id="viewProofButton" style="color: #dc3545;;">View the file</a>
             </div>
 
-            <div class="form-group">
-                <label for="proofOfEnrollment">Certificate of Registration:</label>
-                <input type="text" id="proofOfEnrollment" name="proofOfEnrollment" value="Dela Cruz, Juan G.pdf" readonly>
-                <a href="#" id="viewProofButton" style="color: #dc3545;;">View the file</a>
-            </div>
-
             <!-- Parent/Guardian Information -->
             <div class="form-group">
                 <h5><u>Relationship Information</u></h5>
