@@ -24,7 +24,9 @@
   <div id="main-info">
     <div class="event-info">
       <div class="edit-button">
-        <a href="#"><ion-icon name="pencil-outline"></ion-icon></a>
+        <a href="#" id="editButton">
+          <ion-icon name="pencil-outline"></ion-icon>
+        </a>
       </div>
       <div class="event-image">
         <img src="img/LTS.jpg" alt="Event Image" />
@@ -123,8 +125,7 @@
           collaborating with local authorities and other stakeholders, the
           program aims to create a sustainable and clean environment for all.
         </p>
-      </div>
-      <div class="description-info">
+
         <h3>Members:</h3>
         <p>
           Sarah Johnson <br />
@@ -140,15 +141,33 @@
         </p>
       </div>
       <div class="launch-button">
-        <a href="launchEvent.php" class="launch-link">
+        <a href="dashboard.php" class="launch-link">
           <ion-icon name="rocket"></ion-icon>
           <span>Launch Event</span>
         </a>
       </div>
-
-      <!-- Continue with the rest of the content -->
     </div>
   </div>
+  <script>
+    const editButton = document.getElementById("editButton");
+    const contentElements = document.querySelectorAll(".description-info p");
+    let isEditing = false;
+
+    editButton.addEventListener("click", () => {
+      isEditing = !isEditing;
+      contentElements.forEach((element) => {
+        element.contentEditable = isEditing;
+        element.style.border = isEditing ? "1px solid #000" : "none";
+      });
+
+      // Toggle the edit button's style based on the editing state
+      if (isEditing) {
+        editButton.classList.add("editing");
+      } else {
+        editButton.classList.remove("editing");
+      }
+    });
+  </script>
 </body>
 
 </html>

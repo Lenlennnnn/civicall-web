@@ -22,9 +22,6 @@
 <body>
   <div id="main-info">
     <div class="event-info">
-      <div class="edit-button">
-        <a href="#"><ion-icon name="pencil-outline"></ion-icon></a>
-      </div>
       <div class="event-image">
         <img src="img/emergency.jpg" alt="Event Image" />
       </div>

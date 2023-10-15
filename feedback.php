@@ -137,6 +137,12 @@
         h2 {
             font-size: 60px;
         }
+
+        h1 {
+            position: relative;
+
+            right: -10px;
+        }
     </style>
 </head>
 
@@ -159,7 +165,7 @@
             <br>
             <hr />
             <br />
-            <h3>Feedback</h3>
+            <h1>Feedback</h1>
             <br>
             <br>
 
