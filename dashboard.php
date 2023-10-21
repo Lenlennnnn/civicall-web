@@ -92,7 +92,7 @@
     }
 
     .upcoming {
-      width: 151%;
+      width: 100%;
     }
 
     .tableIto {
