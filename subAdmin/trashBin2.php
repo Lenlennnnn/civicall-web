@@ -347,7 +347,7 @@
                 <button class="delete-button">Delete</button>
                 <button class="restore-button">Restore</button>
                 <a href="trashBin.php">
-                    <button type="button" class="btn btn-secondary">View Accounts</button>
+                    <button type="button" class="btn btn-secondary">View Events</button>
                 </a>
             </div>
             <!-- delete modal -->

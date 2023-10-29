@@ -16,6 +16,44 @@
     body {
       background-color: #E1E1E1;
     }
+
+    .launch-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      /* Set the width to 300px */
+      margin: 20px auto;
+      /* Center the button horizontally */
+      padding: 10px;
+      border: solid 1px #ccc;
+      border-radius: 10px;
+      background-color: #a90101;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .launch-button:hover {
+      background-color: #dc3545;
+    }
+
+    .launch-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .launch-link ion-icon {
+      font-size: 24px;
+      margin-right: 10px;
+      color: white;
+    }
+
+    .launch-link span {
+      font-size: 18px;
+      color: white;
+    }
   </style>
 </head>
 
@@ -130,7 +168,12 @@
           William Chen <br />
         </p>
       </div>
-      <!-- Continue with the rest of the content -->
+      <div class="launch-button">
+        <a href="pendingAct.php" class="launch-link">
+          <ion-icon name="close-circle-outline"></ion-icon>
+          <span>Invalidate</span>
+        </a>
+      </div>
     </div>
   </div>
 </body>
