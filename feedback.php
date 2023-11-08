@@ -155,11 +155,11 @@
         </a>
         <div class="report-container">
 
-            <div class="retainer">
+            <!-- <div class="retainer">
                 <a href="viewReport.php">
                     <button class="report-button">View Reports <span class="notification-badge">1</span></button>
                 </a>
-            </div>
+            </div> -->
 
             <br />
             <br>

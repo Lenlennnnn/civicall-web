@@ -185,31 +185,39 @@
         <table id="example" class="table table-striped" style="width:100%">
           <thead>
             <tr>
+              <th>No.</th>
               <th>Name</th>
-              <th>Gsuit Email</th>
+              <th>SR-Code</th>
               <th>Gender</th>
               <th>Campus</th>
-              <th>Course</th>
-              <th>Date Join</th>
+              <th>NSTP Program</th>
+              <th>Year Level</th>
+              <th>Active Points</th>
             </tr>
           </thead>
           <tbody>
             <tr class="clickable-row" onclick="window.location.href='totalStudentInfo.php';">
+              <td>1</td>
               <td>Cruz, Juan D.</td>
-              <td>20-12345@g.batstate-u.edu.ph</td>
+              <td>20-12345</td>
               <td>Male</td>
               <td>Malvar</td>
-              <td>BSIT</td>
-              <td>2023-01-15</td>
+              <td>Civic Welfare Traing Service</td>
+              <td>Second Year</td>
+              <td>123</td>
+
             </tr>
 
             <tr class="clickable-row" onclick="window.location.href='totalStudentInfo2.php';">
+              <td>2</td>
               <td>Draguin, Sam C.</td>
-              <td>20-54321g.batstate-u.edu.ph</td>
+              <td>20-54321</td>
               <td>Male</td>
               <td>Malvar</td>
-              <td>BSIT</td>
-              <td>2022-04-13</td>
+              <td>Literacy Training Service</td>
+              <td>Graduated</td>
+              <td>321</td>
+
             </tr>
 
           </tbody>

@@ -185,20 +185,18 @@
         <table id="example" class="table table-striped" style="width:100%">
           <thead>
             <tr>
-              <th>Name</th>
+              <th>No.</th>
               <th>Title</th>
-              <th>Date Requested</th>
-              <th>Campus</th>
-
+              <th>Civic Engagement</th>
+              <th>Date Created</th>
             </tr>
           </thead>
           <tbody>
             <tr class="clickable-row" onclick="window.location.href='eventInfo.php';">
-              <td>Lesson Learned</td>
-              <td>Never Stop Learning</td>
+              <td>1</td>
+              <td>To learn is to teach</td>
+              <td>Teaching Literacy</td>
               <td>2023-03-12</td>
-              <td>JPLPC Malvar</td>
-
             </tr>
 
           </tbody>

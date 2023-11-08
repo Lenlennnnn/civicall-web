@@ -28,10 +28,10 @@
     <div class="container-login100">
       <div class="wrap-login100">
         <div class="login100-form-title" style="background-image: url(images/homepage.jpg)">
-          <span class="login100-form-title-1"> Sub Admin's Portal </span>
+          <span class="login100-form-title-1"> Super Admin's Portal </span>
         </div>
         <div>
-          <a href="../../../Civic-web/login/login.php" class="txt2"> Super Admin Login </a>
+          <a href="../../login/login.php" class="txt2"> Super Admin Login </a>
         </div>
         <form class="login100-form validate-form">
           <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">

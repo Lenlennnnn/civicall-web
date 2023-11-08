@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/completeEvent.css" />
   <link rel="icon" type="image/png" href="login/images/icons/civicicon.png" />
 
-
   <style>
     #main-info {
       background-color: white;
@@ -17,14 +16,92 @@
     body {
       background-color: #E1E1E1;
     }
+
+
+
+    .event-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      /* Add spacing between form groups */
+    }
+
+    label {
+
+      /* Adjust the width as needed */
+      text-align: left;
+      margin-right: 10px;
+      /* Add some spacing between the label and input */
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .event-details {
+      position: inherit;
+      margin-top: 25px;
+
+
+    }
+
+    .input-container {
+      flex: 1;
+    }
+
+    input[type="text"] {
+      width: 85%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+
+    .user-icon {
+      position: absolute;
+      top: 350px;
+      right: 60px;
+      font-size: 50px;
+      color: #343a40;
+      cursor: pointer;
+    }
+
+    .user-icon:hover {
+      transform: scale(1.2);
+      transition: transform 0.2s;
+    }
+
+    .hyperlink {
+      text-decoration: underline;
+      color: black;
+      cursor: pointer;
+      margin-left: 5px;
+      position: relative;
+      top: -27px;
+      left: 4px;
+      text-decoration: none;
+    }
+
+    .hyperlink:hover {
+      color: #0056b3;
+      /* Darker color on hover */
+    }
   </style>
 </head>
 
 <body>
   <div id="main-info">
     <div class="event-info">
+      <a href="attendance.php">
+        <div class="notification-icon">
+          <ion-icon name="person-circle" class="user-icon"></ion-icon>
+        </div>
+      </a>
       <div class="event-image">
-        <img src="img/cleaning.jpg" alt="Event Image" />
+        <img src="img/linis.jpg" alt="Event Image" />
       </div>
       <a href="completedAct.php">
         <div class="back-button">
@@ -34,118 +111,94 @@
       <!-- ====== ionicons ======= -->
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <div class="event-details">
-        <h1 class="event-title">Sustainable Environmental Cleaning</h1>
-        <p><b>Title:</b> Revitalizing Our World</p>
-        <p><b>Campus:</b> Malvar</p>
-        <p><b>Location:</b> Malvar Batangas</p>
-        <h4>Time & Date:</h4>
-        <p>9:00 am - 9:00 pm<br />April 12, 2023 (Tuesday)</p>
-      </div>
-    </div>
-    <h2>Project Description</h2>
-    <div class="event-description">
-      <div class="description-info">
-        <h3>Introduction</h3>
-        <p>
-          Environmental pollution is a significant issue that affects human
-          health and the planet's ecosystem. The Environmental Cleaning
-          Program aims to create awareness and promote community action
-          towards cleaning up the environment by organizing activities that
-          support the environment's health and hygiene.
-        </p>
-      </div>
-      <div class="description-info">
-        <h3>Objectives</h3>
-        <p>
-          <i> main objectives of the Environmental Cleaning Program are:</i><br /><br />
+        <div class="form-group">
+          <label for="campus">Title:</label>
+          <div class="input-container">
+            <input type="text" id="title" name="title" value="Clean and Green" readonly />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="campus">Civic Engagement:</label>
+          <div class="input-container">
+            <input type="text" id="title" name="title" value="Tree Planting" readonly />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="campus">Location:</label>
+          <div class="input-container">
+            <input type="text" id="title" name="title" value="" readonly />
+            <a href="https://www.google.com.ph/maps/place/Manila,+Metro+Manila/@14.604291,120.9418795,12.46z/data=!4m6!3m5!1s0x3397ca03571ec38b:0x69d1d5751069c11f!8m2!3d14.5995124!4d120.9842195!16zL20vMDE5NXBk?entry=ttu" target="_blank" class="hyperlink">maps/place/Manila,+Metro+Manila/@14.604291,120.9418795,12.46z</a>
+          </div>
 
-          To create awareness about environmental pollution and its effects on
-          human health and the ecosystem. To promote the adoption of
-          environmentally friendly practices in homes, workplaces, and
-          communities. To mobilize communities to participate in activities
-          that promote environmental cleanliness, including cleaning
-          campaigns, waste management, and recycling. To collaborate with
-          local authorities, non-governmental organizations, and other
-          stakeholders to develop and implement policies and programs that
-          promote environmental cleanliness. To evaluate and continuously
-          improve the program's effectiveness and impact.
-        </p>
-      </div>
-      <div class="description-info">
-        <h3>Program Components</h3>
-        <p>
-          The Environmental Cleaning Program consists of several components:
-          Community Education and Awareness: This component involves
-          conducting awareness-raising campaigns, seminars, and training
-          sessions to educate communities on environmental pollution and its
-          effects. It includes topics such as waste management, recycling, and
-          adopting environmentally friendly practices. Environmental Clean-up
-          Activities: This component involves organizing clean-up activities
-          such as community clean-up campaigns, tree planting activities, and
-          recycling initiatives. These activities will be conducted in
-          collaboration with local authorities, non-governmental
-          organizations, and other stakeholders. Waste Management and
-          Recycling: This component involves promoting waste reduction, proper
-          waste disposal, and recycling practices. It includes educating
-          communities on how to sort waste, composting, and the benefits of
-          recycling. Advocacy and Policy Development: This component involves
-          advocating for policies that promote environmental cleanliness and
-          working with local authorities to implement and enforce these
-          policies.
-        </p>
-      </div>
-      <div class="description-info">
-        <h3>Evaluation and Monitoring</h3>
-        <p>
-          The Environmental Cleaning Program will be regularly evaluated to
-          determine its effectiveness and impact. This will involve tracking
-          key performance indicators such as the number of community clean-up
-          campaigns conducted, the amount of waste recycled, and the number of
-          policies implemented. Feedback from program participants and other
-          stakeholders will also be solicited to inform program improvements.
-        </p>
-      </div>
-      <div class="description-info">
-        <h3>Conclusion</h3>
-        <p>
-          The Environmental Cleaning Program aims to create awareness and
-          promote community action towards cleaning up the environment. By
-          organizing activities that support the environment's health and
-          hygiene, promoting environmentally friendly practices, and
-          collaborating with local authorities and other stakeholders, the
-          program aims to create a sustainable and clean environment for all.
-        </p>
-      </div>
-      <div class="description-info">
-        <h3>Members:</h3>
-        <p>
-          Sarah Johnson <br />
-          Michael Lee <br />
-          Ashley Rodriguez <br />
-          Brandon Singh <br />
-          Rachel Chen <br />
-          Jason Patel <br />
-          Melissa Wong <br />
-          Christopher Kim <br />
-          Olivia Martinez <br />
-          William Chen <br />
-        </p>
-      </div>
-      <div class="rating-section">
-        <h2>Ratings</h2>
-        <p class="average-rating">5.0</p>
-        <div class="rating-stars">
-          <ion-icon name="star"></ion-icon>
-          <ion-icon name="star"></ion-icon>
-          <ion-icon name="star"></ion-icon>
-          <ion-icon name="star"></ion-icon>
-          <ion-icon name="star"></ion-icon>
+        </div>
+        <div class="form-group">
+          <label for="campus">Date and Time:</label>
+          <div class="input-container">
+            <input type="text" id="title" name="title" value="2023/08/20 - 2023/08/23 (Monday) / 9:00 AM - 4:00 PM" readonly />
+          </div>
         </div>
       </div>
 
-      <!-- Continue with the rest of the content -->
+
+    </div>
+    <h2>Project Description</h2>
+    <div class="event-description">
+      <h2 style="color: white;">INTRODUCTION</h2>
+      <div class="description-info">
+        <p>
+          Cleaning the environment is a vital responsibility that transcends personal and collective interests, embodying our commitment to safeguarding the planet and ensuring a sustainable future for generations to come. It involves the conscientious removal of pollutants, waste, and harmful elements from our surroundings, promoting the restoration and preservation of natural ecosystems. Cleaning the environment is not limited to physical debris but extends to addressing broader issues such as air and water quality, deforestation, and climate change mitigation. It signifies our dedication to harmonious coexistence with nature, recognizing that a cleaner environment not only enhances our own well-being but also plays an essential role in protecting the intricate web of life on Earth and preserving the beauty and diversity of our planet.
+        </p>
+      </div>
+      <h2 style="color: white;">OBJECTIVES</h2>
+      <div class="description-info">
+        <p>
+          1. Reduce Pollution: To decrease the release of pollutants into the air, water, and soil, mitigating the adverse effects on human health and ecosystems.
+          <br><br>
+          2. Waste Reduction and Recycling: To minimize waste generation and promote recycling efforts, conserving natural resources and reducing landfill usage.
+          <br><br>
+          3. Preserve Biodiversity: To protect and restore natural habitats, safeguarding the diverse species that constitute the Earth's ecosystems.
+          <br><br>
+          4. Combat Climate Change: To reduce greenhouse gas emissions through sustainable practices, contributing to global efforts to mitigate climate change.
+          <br><br>
+          5. Promote Sustainable Resource Management: To encourage responsible use of resources, ensuring their availability for future generations.
+          <br><br>
+          6. Improve Air and Water Quality: To enhance the quality of the air we breathe and the water we drink, safeguarding human health and the environment.
+          <br><br>
+          7. Educate and Raise Awareness: To inform and engage communities about environmental issues, fostering a sense of responsibility and sustainable practices.
+          <br><br>
+          8. Laws and Regulations Compliance: To ensure compliance with environmental laws and regulations, holding individuals, businesses, and industries accountable for their impact on the environment.
+          <br><br>
+          9. Economic and Social Benefits: To recognize and promote the economic and social benefits of a clean environment, including increased property values, improved public health, and job creation in sustainable industries.
+          <br><br>
+          10. Sustainable Development: To align environmental cleanliness with broader goals of sustainable development, balancing human needs with ecological imperatives.
+        </p>
+      </div>
+      <h2 style="color: white;">CAMPUS</h2>
+      <div class="description-info">
+        <p>
+          JPLPC Malvar Batangas
+        </p>
+      </div>
+      <h2 style="color: white;">MATERIALS</h2>
+      <div class="description-info">
+        <p>
+          1. Safety Gear <br>
+
+          2. Trash Bags and Containers <br>
+
+          3. Cleaning Tools <br>
+
+          4. Cleaning Supplies <br>
+
+          5. Disposal Equipment
+
+        </p>
+      </div>
     </div>
   </div>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <script>
+  </script>
 </body>
 
 </html>

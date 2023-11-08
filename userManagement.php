@@ -252,20 +252,18 @@
             <label for="firstname">First Name:</label>
             <input type="text" id="firstname" name="firstname" required placeholder="Your first name" />
 
-            <label for="lastname">Last Name:</label>
-            <input type="text" id="lastname" name="lastname" required placeholder="Your last name" />
+            <label for="lastname">Middle Name:</label>
+            <input type="text" id="lastname" name="lastname" required placeholder="Your middle name" />
 
-            <label for="middlename">Middle Name:</label>
-            <input type="text" id="middlename" name="middlename" required placeholder="Your middle name" />
+            <label for="middlename">Last Name:</label>
+            <input type="text" id="middlename" name="middlename" required placeholder="Your last name" />
 
-            <label>Gender:</label>
-            <div class="radio-group">
-              <input type="radio" id="male" name="gender" value="male" required>
-              <label for="male" style=" font-weight: normal;">Male</label>
-              <input type="radio" id="female" name="gender" value="female" required>
-              <label for="female" style=" font-weight: normal;">Female</label>
-            </div>
-
+            <label for="campus">Gender:</label>
+            <select id="campus" name="campus" required>
+              <option value="" disabled selected>Select Gender</option>
+              <option value="nasugbu">Male</option>
+              <option value="nasugbu">Female</option>
+            </select>
 
             <label for="campus">Campus:</label>
             <select id="campus" name="campus" required>
@@ -288,10 +286,12 @@
             </select>
 
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required placeholder="Your email address" />
+            <input type="email" id="email" name="email" required placeholder="example@email.com" />
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required placeholder="Your password" />
+            <label for="password">Confirm Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Re-type password" />
 
             <button type="submit">Create Account</button>
           </form>
@@ -303,160 +303,37 @@
         <table id="example" class="table table-striped" style="width:100%">
           <thead>
             <tr>
+              <th>No.</th>
               <th>Name</th>
-              <th>Gsuit Email</th>
+              <th>Email</th>
               <th>Gender</th>
-              <th>Course</th>
               <th>Campus</th>
-              <th>Date Started</th>
+              <th>NSTP Program</th>
+              <th>Section</th>
+              <th>User Type</th>
             </tr>
           </thead>
           <tbody>
             <tr class="clickable-row" onclick="window.location.href='userManageInfo.php';">
+              <td>1</td>
               <td>Cruz, Juan D.</td>
               <td>20-12345@g.batstate.edu.ph</td>
               <td>Male</td>
-              <td>Information Technology</td>
               <td>Malvar Campus </td>
-              <td>2023-01-15</td>
+              <td>Civic Welfare Traing Service</td>
+              <td>4102 </td>
+              <td>Student</td>
             </tr>
             <tr class="clickable-row" onclick="window.location.href='userManageInfo2.php';">
+              <td>2</td>
               <td>Draguin, Sam C.</td>
               <td>20-54321@g.batstate.edu.ph</td>
               <td>Male</td>
-              <td>Information Technology</td>
               <td>Malvar Campus </td>
-              <td>2022-04-14</td>
+              <td>Civic Welfare Traing Service </td>
+              <td>-</td>
+              <td>Graduated</td>
             </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-            <tr>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-              <td>Null</td>
-            </tr>
-
           </tbody>
         </table>
       </div>

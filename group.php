@@ -193,16 +193,23 @@
         <div class="container-popup">
           <span class="close" id="closeModal">&times;</span>
 
-          <h2>Create User Account</h2>
+          <h2>Create Admin Account</h2>
           <form>
             <label for="firstname">First Name:</label>
             <input type="text" id="firstname" name="firstname" required placeholder="Your first name" />
 
-            <label for="lastname">Last Name:</label>
-            <input type="text" id="lastname" name="lastname" required placeholder="Your last name" />
+            <label for="lastname">Middle Name:</label>
+            <input type="text" id="lastname" name="lastname" required placeholder="Your middle name" />
 
-            <label for="middlename">Middle Name:</label>
-            <input type="text" id="middlename" name="middlename" required placeholder="Your middle name" />
+            <label for="middlename">Last Name:</label>
+            <input type="text" id="middlename" name="middlename" required placeholder="Your last name" />
+
+            <label for="campus">Gender:</label>
+            <select id="campus" name="campus" required>
+              <option value="" disabled selected>Select Gender</option>
+              <option value="nasugbu">Male</option>
+              <option value="nasugbu">Female</option>
+            </select>
 
             <label for="campus">Campus:</label>
             <select id="campus" name="campus" required>
@@ -225,10 +232,12 @@
             </select>
 
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required placeholder="Your email address" />
+            <input type="email" id="email" name="email" required placeholder="example@email.com" />
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required placeholder="Your password" />
+            <label for="password">Confirm Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Re-type password" />
 
             <button type="submit">Create Account</button>
           </form>
@@ -240,6 +249,7 @@
         <table id="example" class="table table-striped" style="width:100%">
           <thead class="headerr">
             <tr>
+              <th>No.</th>
               <th>Name</th>
               <th>Email</th>
               <th>Account Number</th>
@@ -250,6 +260,7 @@
           <tbody>
 
             <tr class="clickable-row" onclick="window.location.href='adminInfo.php';">
+              <td>1</td>
               <td>Ford, Alex G</td>
               <td>20-122333@g.batstate-u.edu.ph</td>
               <td>20-122333</td>
@@ -261,38 +272,36 @@
               <td>Null</td>
               <td>Null</td>
               <td>Null</td>
-
+              <td>Null</td>
             </tr>
             <tr>
               <td>Null</td>
               <td>Null</td>
               <td>Null</td>
               <td>Null</td>
-
+              <td>Null</td>
             </tr>
             <tr>
               <td>Null</td>
               <td>Null</td>
               <td>Null</td>
               <td>Null</td>
-
+              <td>Null</td>
             </tr>
             <tr>
               <td>Null</td>
               <td>Null</td>
               <td>Null</td>
               <td>Null</td>
-
-
+              <td>Null</td>
             </tr>
             <tr>
               <td>Null</td>
               <td>Null</td>
               <td>Null</td>
               <td>Null</td>
-
+              <td>Null</td>
             </tr>
-
           </tbody>
         </table>
       </div>

@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/totalStudents.css" />
     <link rel="stylesheet" href="css/totalStudentInfo.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.1/css/ionicons.min.css">
     <link rel="icon" type="image/png" href="login/images/icons/civicicon.png" />
+
 
     <style>
         input[type="text"] {
@@ -67,7 +69,7 @@
         }
 
         /* for modal */
-        /* Add your CSS styles for the modal and menu icon here */
+
         .modal {
             display: none;
             position: fixed;
@@ -89,13 +91,51 @@
 
         .close-modal {
             position: absolute;
-            top: 10px;
+            top: 0px;
             right: 10px;
             font-size: 24px;
             cursor: pointer;
         }
 
-        /* Add any additional styles for the menu icon if needed */
+        .header {
+            margin-left: -350px;
+            margin-bottom: 10px;
+        }
+
+        .close {
+            text-align: end;
+        }
+
+        #corcon {
+            margin-top: 30px;
+            width: 60%;
+            height: 90%;
+        }
+
+        .imgcor {
+            height: 95%;
+        }
+
+        .checktag {
+            font-weight: normal;
+        }
+
+        .savebtn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .savebtn:hover {
+            background-color: #0056b3;
+        }
+
+        .datejoin {
+            margin-left: 720px;
+        }
     </style>
 </head>
 
@@ -120,26 +160,39 @@
             <!-- Menu Button -->
             <div class="menu-button">
                 <ion-icon name="menu-outline" id="menu-icon"></ion-icon>
-                <div id="menu-modal" class="modal">
+                <div id="menu-modall" class="modal">
                     <div class="modal-content">
                         <span class="close-modal" id="close-icon">&times;</span>
-                        <h2>Menu</h2>
-                        <!-- Add your menu items here -->
-                        <ul>
-                            <li><a href="#">Item 1</a></li>
-                            <li><a href="#">Item 2</a></li>
-                            <li><a href="#">Item 3</a></li>
-                        </ul>
+                        <div class="modal-header">
+                            <h5>Account Settings</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="school-checkbox">
+                                <input type="checkbox" id="school1" name="school1" value="School 1">
+                                <label for="school1" class="checktag">Remove this account</label><br>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="savebtn">Remove</button>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- Personal Information -->
             <div class="form-group">
                 <h5><u>Personal Information</u></h5>
-                <label for="full-name">Full Name: <i>(Lastname, Firstname, Middle Name)</i></label>
-                <input type="text" id="full-name" name="full-name" value="Draguin, Sam C." readonly>
+                <label for="full-name">First Name:<i class="datejoin">April 14, 2022</i></label>
+                <input type="text" id="full-name" name="full-name" value="Sam" readonly>
             </div>
-
+            <div class="form-group">
+                <label for="grade-level">Middle Name:</label>
+                <input type="text" id="grade-level" name="grade-level" value="Cruz" readonly>
+            </div>
+            <div class="form-group">
+                <label for="grade-level">Last Name:</label>
+                <input type="text" id="grade-level" name="grade-level" value="Draguin" readonly>
+            </div>
             <div class="form-group">
                 <label for="grade-level">Gender:</label>
                 <input type="text" id="grade-level" name="grade-level" value="Male" readonly>
@@ -147,17 +200,22 @@
 
             <div class="form-group">
                 <label for="grade-level">Date of birth: <i>(Month Day, Year)</i></label>
-                <input type="text" id="grade-level" name="grade-level" value="April 01, 2000" readonly>
+                <input type="text" id="grade-level" name="grade-level" value="April 22, 2000" readonly>
             </div>
 
             <div class="form-group">
                 <label for="grade-level">Address: <i>(House Number, Street/Building Name, Barangay, City, Province)</i></label>
-                <input type="text" id="grade-level" name="grade-level" value="256 Barangay Lodlod Malvar Batangas" readonly>
+                <input type="text" id="grade-level" name="grade-level" value="321 Sur Malvar Batangas" readonly>
             </div>
 
             <div class="form-group">
                 <label for="grade-level">Contact Number: <i>(09XX-XXX-XXXX)</i></label>
-                <input type="text" id="grade-level" name="grade-level" value="09987654321" readonly>
+                <input type="text" id="grade-level" name="grade-level" value="09123456789" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="grade-level">Incase of Emergency: <i>(09XX-XXX-XXXX)</i></label>
+                <input type="text" id="grade-level" name="grade-level" value="09876543210" readonly>
             </div>
 
             <!-- Academic Information -->
@@ -168,7 +226,7 @@
             </div>
 
             <div class="form-group">
-                <label for="grade-level">Gsuit Email: <i>(20-XXXXX@g.batstate-u.edu.ph)</i></label>
+                <label for="grade-level">Email: <i>(20-XXXXX@g.batstate-u.edu.ph)</i></label>
                 <input type="text" id="grade-level" name="grade-level" value="20-54321@g.batstate-u.edu.ph" readonly>
             </div>
 
@@ -183,66 +241,32 @@
             </div>
 
             <div class="form-group">
-                <label for="grade-level">Major:</label>
-                <input type="text" id="grade-level" name="grade-level" value="Service Management" readonly>
+                <label for="grade-level">NSTP Program:</label>
+                <input type="text" id="grade-level" name="grade-level" value="Civic Welfare Training Service" readonly>
             </div>
 
             <div class="form-group">
-                <label for="grade-level">Academic Status:</label>
+                <label for="grade-level">User Type:</label>
                 <input type="text" id="grade-level" name="grade-level" value="Graduated" readonly>
             </div>
 
             <!--  records/credentials -->
             <div class="form-group">
-                <h5><u>Records</u></h5>
-                <label for="proofOfEnrollment">Transcript of Records:</label>
-                <input type="text" id="proofOfEnrollment" name="proofOfEnrollment" value="TOR.pdf" readonly>
-                <a href="#" id="viewProofButton" style="color: #dc3545;;">View the file</a>
+                <label for="proofOfEnrollment">Credentials:</label>
+                <input type="text" id="proofOfEnrollmentInput" name="proofOfEnrollment" value="ID.pdf" readonly>
+                <a href="#" id="viewProofOfEnrollment" style="color: #dc3545;">View the file</a>
             </div>
 
-            <div class="form-group">
-                <label for="proofOfEnrollment">Diploma:</label>
-                <input type="text" id="proofOfEnrollment" name="proofOfEnrollment" value="Diploma.pdf" readonly>
-                <a href="#" id="viewProofButton" style="color: #dc3545;;">View the file</a>
+            <!-- Modal for displaying the file -->
+            <div id="proofOfEnrollmentModal" class="modal">
+                <div class="modal-content" id="corcon">
+                    <span class="close" id="closeProofOfEnrollmentModal">&times;</span>
+                    <img src="img/studentID.jpg" alt="" class="imgcor">
+                </div>
             </div>
-
-            <div class="form-group">
-                <label for="proofOfEnrollment">Certificates Received:</label>
-                <input type="text" id="proofOfEnrollment" name="proofOfEnrollment" value="Certificate.pdf" readonly>
-                <a href="#" id="viewProofButton" style="color: #dc3545;;">View the file</a>
-            </div>
-
             <div class="form-group">
                 <label for="grade-level">Credits Earned:</label>
-                <input type="text" id="grade-level" name="grade-level" value="5690 Active points" readonly>
-            </div>
-
-            <!-- Parent/Guardian Information -->
-            <div class="form-group">
-                <h5><u>Relationship Information</u></h5>
-                <label for="parent-name">Parent/Guardian Name: <i>(Lastname, Firstname, Middle Name)</i></label>
-                <input type="text" id="parent-name" name="parent-name" value="Draguin, Ron K." readonly>
-            </div>
-
-            <div class="form-group">
-                <label for="relationship">Relationship:</label>
-                <input type="text" id="relationship" name="relationship" value="Father" readonly>
-            </div>
-
-            <div class="form-group">
-                <label for="parent-phone">Parent/Guardian Phone: <i>(09XX-XXX-XXXX)</i></label>
-                <input type="text" id="parent-phone" name="parent-phone" value="0998-765-4321" readonly>
-            </div>
-
-            <div class="form-group">
-                <label for="parent-phone">Address: <i>(House Number, Street/Building Name, Barangay, City, Province)</i></label>
-                <input type="text" id="parent-phone" name="parent-phone" value="0980 Barangay Lodlod Malvar Batangas" readonly>
-            </div>
-
-            <div class="form-group">
-                <label for="proofOfEnrollment">Parent Concent:</label>
-                <input type="text" id="proofOfEnrollment" name="proofOfEnrollment" value="parentalConcent.pdf" readonly>
-                <a href="#" id="viewProofButton" style="color: #dc3545;;">View the file</a>
+                <input type="text" id="grade-level" name="grade-level" value="123" readonly>
             </div>
 
 
@@ -261,7 +285,7 @@
             /* for modal */
             // Get references to the menu icon and the modal
             const menuIcon = document.getElementById("menu-icon");
-            const menuModal = document.getElementById("menu-modal");
+            const menuModal = document.getElementById("menu-modall");
             const closeIcon = document.getElementById("close-icon");
 
             // Function to open the modal
@@ -282,6 +306,97 @@
             window.addEventListener("click", (event) => {
                 if (event.target === menuModal) {
                     closeModal();
+                }
+            });
+
+            // Get references to the "Save" button and the modal
+            const saveButton = document.querySelector(".savebtn");
+            const menuModall = document.getElementById("menu-modal");
+
+            // Add a click event listener to the "Save" button
+            saveButton.addEventListener("click", function() {
+                // Close the modal by hiding it
+                menuModal.style.display = "none";
+            });
+
+            /* modal for cor */
+            const viewProofOfEnrollmentButton = document.getElementById("viewProofOfEnrollment");
+            const proofOfEnrollmentModal = document.getElementById("proofOfEnrollmentModal");
+            const closeProofOfEnrollmentModal = document.getElementById("closeProofOfEnrollmentModal");
+            const fileContent = document.getElementById("fileContent");
+
+            // Function to open the modal
+            viewProofOfEnrollmentButton.addEventListener("click", function(e) {
+                e.preventDefault();
+                proofOfEnrollmentModal.style.display = "block";
+
+                // You can load and display the file content in this section if needed.
+                // Example: fileContent.innerText = "File content goes here.";
+            });
+
+            // Function to close the modal
+            closeProofOfEnrollmentModal.addEventListener("click", function() {
+                proofOfEnrollmentModal.style.display = "none";
+            });
+
+            // Close the modal if the user clicks outside of it
+            window.addEventListener("click", function(event) {
+                if (event.target === proofOfEnrollmentModal) {
+                    proofOfEnrollmentModal.style.display = "none";
+                }
+            });
+
+            /* modal for student ID */
+            const viewProofStudentIDLink = document.getElementById("viewProofStudentIDLink");
+            const viewProofStudentIDModal = document.getElementById("viewProofStudentIDModal");
+            const closeViewProofStudentIDModal = document.getElementById("closeViewProofStudentIDModal");
+            const studentIDFileContent = document.getElementById("studentIDFileContent");
+
+            // Function to open the modal
+            viewProofStudentIDLink.addEventListener("click", function(e) {
+                e.preventDefault();
+                viewProofStudentIDModal.style.display = "block";
+
+                // You can load and display the file content in this section if needed.
+                // Example: studentIDFileContent.innerText = "File content goes here.";
+            });
+
+            // Function to close the modal
+            closeViewProofStudentIDModal.addEventListener("click", function() {
+                viewProofStudentIDModal.style.display = "none";
+            });
+
+            // Close the modal if the user clicks outside of it
+            window.addEventListener("click", function(event) {
+                if (event.target === viewProofStudentIDModal) {
+                    viewProofStudentIDModal.style.display = "none";
+                }
+            });
+
+            /* modal for parent consent */
+            const proofParentLink = document.getElementById("proofParentLink");
+            const proofParentModal = document.getElementById("proofParentModal");
+            const closeProofParentModal = document.getElementById("closeProofParentModal");
+            const proofParentFileContent = document.getElementById("proofParentFileContent");
+
+            // Function to open the modal
+            proofParentLink.addEventListener("click", function(e) {
+                e.preventDefault();
+                proofParentModal.style.display = "block";
+
+                // You can load and display the file content in this section if needed.
+                // Example: proofParentFileContent.innerText = "File content goes here.";
+            });
+
+            // Function to close the modal
+            closeProofParentModal.addEventListener("click", function() {
+                proofParentModal.style.display = "none";
+            });
+
+            // Close the modal if the user clicks outside of it
+            window.addEventListener("click", function(event) {
+                if (event.target === proofParentModal) {
+                    proofParentModal.style.display = "none";
                 }
             });
         </script>

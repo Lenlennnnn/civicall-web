@@ -37,21 +37,6 @@ body {
   text-decoration: underline;
 }
 
-.event-details {
-  flex: 1;
-  position: relative;
-  top: -20px;
-}
-
-.event-details p {
-  margin-bottom: 10px;
-}
-
-.event-details h4 {
-  position: relative;
-  top: 10px;
-}
-
 .edit-button {
   position: absolute;
   top: 30px;

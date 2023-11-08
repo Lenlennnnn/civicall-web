@@ -67,22 +67,22 @@
                 <table id="example" class="table table-striped" style="width:100%">
                     <thead>
                         <tr>
+                            <th>No.</th>
                             <th>Name</th>
-                            <th>Gsuit Email</th>
+                            <th>Email</th>
                             <th>Gender</th>
-                            <th>Course</th>
+                            <th>NSTP Program</th>
                             <th>Campus</th>
-                            <th>Date Joined</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="clickable-row" onclick="window.location.href='validateStudentInfo.php';">
+                            <td>1</td>
                             <td>Cruz, Juan D.</td>
                             <td>20-12345@g.batstate-u.edu.ph</td>
                             <td>Male</td>
-                            <td>Information Technology</td>
+                            <td>Civic Welfare Traing Service</td>
                             <td>JPLPC Malvar Batangas</td>
-                            <td>2023-01-15</td>
                         </tr>
 
                     </tbody>

@@ -185,20 +185,21 @@
         <table id="example" class="table table-striped" style="width:100%">
           <thead>
             <tr>
-              <th>Name</th>
+              <th>No.</th>
               <th>Title</th>
+              <th>Civic Engagement</th>
               <th>Campus</th>
               <th>Date Requested</th>
             </tr>
           </thead>
           <tbody>
             <tr class="clickable-row" onclick="window.location.href='reqInfo.php';">
+              <td>1</td>
               <td>Emergency Response</td>
-              <td>Aid Healing</td>
+              <td>Relief Operation</td>
               <td>Lipa</td>
               <td>2023-09-03</td>
             </tr>
-
           </tbody>
         </table>
       </div>

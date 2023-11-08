@@ -161,6 +161,70 @@
         #closeButton:hover {
             background-color: #0056b3;
         }
+
+        /* Media query for screens smaller than 768px */
+        @media (max-width: 768px) {
+            .change-password-container {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 765px) {
+            .main {
+                border-radius: 0;
+            }
+
+            .h1-group {
+                top: 0px;
+                left: 40px;
+            }
+
+            .custom-button {
+                left: 50%;
+                top: 120px;
+            }
+
+            .back-button {
+                left: 0;
+            }
+
+            .form-group label {
+                font-size: 14px;
+            }
+
+            .modal-content {
+                left: -10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .main {
+                border-radius: 0;
+            }
+
+            .h1-group {
+                top: 0px;
+                left: 20px;
+            }
+
+            .custom-button {
+                left: 50%;
+                top: 120px;
+            }
+
+            .back-button {
+                left: 0;
+            }
+
+            .form-group label {
+                font-size: 14px;
+            }
+
+            .modal-content {
+                left: -10px;
+            }
+        }
     </style>
 </head>
 
@@ -177,7 +241,7 @@
         </div>
         <h1 class="h1-group">Change Password</h1>
         <div class="change-password-container">
-            <h2>Change Password</h2>
+            <h2>Insert your password here</h2>
             <form id="changePasswordForm">
                 <div class="form-group">
                     <label for="currentPassword">Current Password:</label>

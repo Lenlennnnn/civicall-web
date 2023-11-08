@@ -110,22 +110,18 @@
         <table id="example" class="table table-striped" style="width:100%">
           <thead>
             <tr>
-              <th>Event</th>
+              <th>No.</th>
               <th>Title</th>
-              <th>Place</th>
+              <th>Civic Engagement</th>
               <th>Date Started</th>
-              <th>Date Ended</th>
-              <th>Rate</th>
             </tr>
           </thead>
           <tbody>
             <tr class="clickable-row" onclick="window.location.href='completeEvent.php';">
+              <td>1</td>
               <td>Sustainable Environmental Cleaning</td>
-              <td>Revitalizing Our World</td>
-              <td>Malvar Batangas</td>
+              <td>Clean Up Drive</td>
               <td>2022-04-12</td>
-              <td>2023-12-03</td>
-              <td>21.2k⭐</td>
 
             </tr>
 

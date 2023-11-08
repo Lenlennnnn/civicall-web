@@ -53,6 +53,11 @@
       margin-right: 70px;
       margin-top: 10px;
     }
+
+    .admin-info {
+      margin-top: 96%;
+
+    }
   </style>
 </head>
 
@@ -97,6 +102,33 @@
             <span class="edit-icon" onclick="enableEdit('account-id')">✎</span>
           </div>
         </div>
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <div class="input-container">
+            <input type="text" id="gender" name="gender" value="Male" readonly />
+            <span class="edit-icon" onclick="enableEdit('gender')">✎</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="bday">Birthday:</label>
+          <div class="input-container">
+            <input type="text" id="bday" name="bday" value="Set Birthday" readonly />
+            <span class="edit-icon" onclick="enableEdit('bday')">✎</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cpnum">Contact Number:</label>
+          <div class="input-container">
+            <input type="text" id="cpnum" name="cpnum" value="Set Contact Number" readonly />
+            <span class="edit-icon" onclick="enableEdit('cpnum')">✎</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cpnum">Account ID:</label>
+          <div class="input-container">
+            <input type="text" id="cpnum" name="cpnum" value="20-12345" readonly />
+          </div>
+        </div>
 
         <div class="form-group">
           <label for="email">Email Account:</label>
@@ -107,27 +139,26 @@
         </div>
 
         <div class="form-group">
-          <label for="title">Account ID:</label>
-          <div class="input-container">
-            <input type="text" id="title" name="title" value="20-12345" readonly />
-            <span class="edit-icon" onclick="enableEdit('title')">✎</span>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="phone-number">Position:</label>
-          <div class="input-container">
-            <input type="text" id="phone-number" name="phone-number" value="Dean CICS" readonly />
-            <span class="edit-icon" onclick="enableEdit('phone-number')">✎</span>
-          </div>
-        </div>
-
-        <div class="form-group">
           <label for="campus">Campus:</label>
           <div class="input-container">
             <input type="text" id="campus" name="campus" value="JPLPC Malvar Batangas" readonly />
           </div>
         </div>
+        <div class="form-group">
+          <label for="position">Position:</label>
+          <div class="input-container">
+            <input type="text" id="position" name="position" value="Input Position" readonly />
+            <span class="edit-icon" onclick="enableEdit('position')">✎</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="socmed">Social Media:</label>
+          <div class="input-container">
+            <input type="text" id="socmed" name="socmed" value="Input Social" readonly />
+            <span class="edit-icon" onclick="enableEdit('socmed')">✎</span>
+          </div>
+        </div>
+
       </div>
       <script>
         function enableEdit(fieldName) {

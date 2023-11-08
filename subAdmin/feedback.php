@@ -137,6 +137,12 @@
         h2 {
             font-size: 60px;
         }
+
+        h1 {
+            position: relative;
+
+            right: -10px;
+        }
     </style>
 </head>
 
@@ -149,11 +155,17 @@
         </a>
         <div class="report-container">
 
+            <!-- <div class="retainer">
+                <a href="viewReport.php">
+                    <button class="report-button">View Reports <span class="notification-badge">1</span></button>
+                </a>
+            </div> -->
+
             <br />
             <br>
             <hr />
             <br />
-            <h3>Feedback</h3>
+            <h1>Feedback</h1>
             <br>
             <br>
 

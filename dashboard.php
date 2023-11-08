@@ -347,6 +347,14 @@
         </li>
 
         <li>
+          <a href="reportMonitoring.php" class="page-transition">
+            <span class="icon">
+              <ion-icon name="document-text-outline"></ion-icon> </span>
+            <span class="title">Reports </span>
+          </a>
+        </li>
+
+        <li>
           <a href="userManagement.php" class="page-transition">
             <span class="icon">
               <ion-icon name="bar-chart-outline"></ion-icon>
@@ -381,13 +389,13 @@
           <a class="ancOne" href="validateRequest.php">
             <div class="divOne">
               <div class="small text-gray-500">December 12, 2023</div>
-              <span class="font-weight-bold">Malvar Admin has a request event for you to approve</span>
+              <span class="font-weight-bold">20-12345 John Lui Corro has a request event for you to approve</span>
             </div>
           </a>
-          <a class="ancTwo" href="viewReport.php">
+          <a class="ancTwo" href="upcomEventInfo.php">
             <div>
               <div class="small text-gray-500">December 7, 2023</div>
-              Lobo Admin reported a user
+              Tomorrow is the Clean Drive event
             </div>
           </a>
           <a class="ancThree" href="validateStudent.php">
@@ -417,9 +425,9 @@
               <ion-icon name="lock-closed" style="color:#888"></ion-icon> &nbsp; Change Password
             </a>
 
-            <a class="dropdown-item" href="trashBin.php">
+            <!--    <a class="dropdown-item" href="trashBin.php">
               <ion-icon name="trash-bin" style="color:#888"></ion-icon> &nbsp; Trash Bin
-            </a>
+            </a> -->
 
             <hr>
             <a class="dropdown-item" href="#" onclick="showLogoutPopup()">
@@ -512,39 +520,40 @@
           <table class="tableIto">
             <thead>
               <tr>
-                <th class="number-column">Number</th>
+                <th class="number-column">No.</th>
                 <th>Title</th>
+                <th>Civic Engagement</th>
                 <th class="date-column">Date</th>
               </tr>
             </thead>
             <tbody>
-              <tr class="clickable-row" onclick="window.location.href='upcomEventInfo.php';">
+              <tr>
                 <td class="number-column">1</td>
-                <td>Environmental Cleaning</td>
+                <td>Learn Teaching</td>
+                <td>Teaching Literacy</td>
+                <td class="date-column">Ongoing</td>
+              </tr>
+              <tr class="clickable-row" onclick="window.location.href='upcomEventInfo.php';">
+                <td class="number-column">2</td>
+                <td>Clean and Green</td>
+                <td>Tree Planting</td>
                 <td class="date-column">2023-08-20</td>
               </tr>
               <tr>
-                <td class="number-column">2</td>
-                <td>Null</td>
-                <td class="date-column">Null</td>
-              </tr>
-              <tr>
                 <td class="number-column">3</td>
+                <td>Null</td>
                 <td>Null</td>
                 <td class="date-column">Null</td>
               </tr>
               <tr>
                 <td class="number-column">4</td>
                 <td>Null</td>
+                <td>Null</td>
                 <td class="date-column">Null</td>
               </tr>
               <tr>
                 <td class="number-column">5</td>
                 <td>Null</td>
-                <td class="date-column">Null</td>
-              </tr>
-              <tr>
-                <td class="number-column">6</td>
                 <td>Null</td>
                 <td class="date-column">Null</td>
               </tr>

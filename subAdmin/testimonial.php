@@ -190,7 +190,8 @@
                                 <img src="img/katy2.jpg" class="rounded-circle shadow-1-strong" width="100" height="100" alt="Anime Profile" />
                             </div>
                             <h5 class="font-weight-bold">Katy Perry</h5>
-                            <h6 class="font-weight-bold my-3">BSIT - 4101 </h6>
+                            <h6 class="font-weight-bold my-3">Malvar Campus</h6>
+                            <p>email@example.com</p>
                             <ul class="list-unstyled d-flex justify-content-center">
                                 <li>
                                     <i class="fas fa-star fa-sm text-info"></i>
@@ -223,7 +224,8 @@
                                 <img src="img/avril.jpg" class="rounded-circle shadow-1-strong" width="100" height="100" />
                             </div>
                             <h5 class="font-weight-bold">Avril Lavigne</h5>
-                            <h6 class="font-weight-bold my-3">BSBA - 1102 </h6>
+                            <h6 class="font-weight-bold my-3">Lipa Campus</h6>
+                            <p>email@example.com</p>
                             <ul class="list-unstyled d-flex justify-content-center">
                                 <li>
                                     <i class="fas fa-star fa-sm text-info"></i>
@@ -254,7 +256,8 @@
                                 <img src="img/taylor2.jpg" class="rounded-circle shadow-1-strong" width="100" height="100" />
                             </div>
                             <h5 class="font-weight-bold">Taylor Swift</h5>
-                            <h6 class="font-weight-bold my-3">BSPS - 2203</h6>
+                            <h6 class="font-weight-bold my-3">Alangilan Campus</h6>
+                            <p>email@example.com</p>
                             <ul class="list-unstyled d-flex justify-content-center">
                                 <li>
                                     <i class="fas fa-star fa-sm text-info"></i>
@@ -286,7 +289,8 @@
                                 <img src="img/ariana2.jpg" class="rounded-circle shadow-1-strong" width="100" height="100" />
                             </div>
                             <h5 class="font-weight-bold">Ariana Grande</h5>
-                            <h6 class="font-weight-bold my-3">BSCS - 2104</h6>
+                            <h6 class="font-weight-bold my-3">Lobo Campus</h6>
+                            <p>email@example.com</p>
                             <ul class="list-unstyled d-flex justify-content-center">
                                 <li>
                                     <i class="fas fa-star fa-sm text-info"></i>
@@ -318,7 +322,8 @@
                                 <img src="img/demi2.jpg" class="rounded-circle shadow-1-strong" width="100" height="100" />
                             </div>
                             <h5 class="font-weight-bold">Demi Lovato</h5>
-                            <h6 class="font-weight-bold my-3">BSED - 1203 </h6>
+                            <h6 class="font-weight-bold my-3">San Juan Campus</h6>
+                            <p>email@example.com</p>
                             <ul class="list-unstyled d-flex justify-content-center">
                                 <li>
                                     <i class="fas fa-star fa-sm text-info"></i>
@@ -350,7 +355,8 @@
                                 <img src="img/selena2.jpg" class="rounded-circle shadow-1-strong" width="100" height="100" />
                             </div>
                             <h5 class="font-weight-bold">Selena Gomez</h5>
-                            <h6 class="font-weight-bold my-3">BSAB - 2203 </h6>
+                            <h6 class="font-weight-bold my-3">Rosario Campus</h6>
+                            <p>email@example.com</p>
                             <ul class="list-unstyled d-flex justify-content-center">
                                 <li>
                                     <i class="fas fa-star fa-sm text-info"></i>
